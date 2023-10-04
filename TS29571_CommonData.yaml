@@ -283,7 +283,7 @@ components:
         32-bit integer.
 
     Uint32Rm:
-    type: integer
+      type: integer
       format: int64      
       minimum: 0
       maximum: 4294967295 #(2^32)-1
