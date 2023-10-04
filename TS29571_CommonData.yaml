@@ -275,6 +275,7 @@ components:
 
     Uint32:
       type: integer
+      format: int64
       minimum: 0
       maximum: 4294967295 #(2^32)-1
       description: >
@@ -282,8 +283,8 @@ components:
         32-bit integer.
 
     Uint32Rm:
-      format: int32
       type: integer
+      format: int64      
       minimum: 0
       maximum: 4294967295 #(2^32)-1
       nullable: true
