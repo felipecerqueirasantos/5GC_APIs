@@ -41,9 +41,7 @@ paths:
           content:
             application/problem+json:
               schema:
-                oneOf:
-                  - $ref: 'TS29571_CommonData.yaml#/components/schemas/ProblemDetails'
-                  - $ref: '#/components/schemas/ChargingDataResponse'
+                $ref: 'TS29571_CommonData.yaml#/components/schemas/ProblemDetails'
         '307':
           $ref: 'TS29571_CommonData.yaml#/components/responses/307'
         '308':
@@ -55,17 +53,13 @@ paths:
           content:
             application/problem+json:
               schema:
-                oneOf:
-                  - $ref: 'TS29571_CommonData.yaml#/components/schemas/ProblemDetails'
-                  - $ref: '#/components/schemas/ChargingDataResponse'
+                $ref: 'TS29571_CommonData.yaml#/components/schemas/ProblemDetails'
         '404':
           description: Not Found
           content:
             application/problem+json:
               schema:
-                oneOf:
-                  - $ref: 'TS29571_CommonData.yaml#/components/schemas/ProblemDetails'
-                  - $ref: '#/components/schemas/ChargingDataResponse'
+                $ref: 'TS29571_CommonData.yaml#/components/schemas/ProblemDetails'
         '405':
           $ref: 'TS29571_CommonData.yaml#/components/responses/405'
         '408':
